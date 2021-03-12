@@ -1,0 +1,109 @@
+.header-div{
+    height: 70px;
+    background: red;
+ }
+.inner-header-div{
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.header-div .container-fluid{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+}
+
+.header-div .container-fluid img{
+    /* border: 1px solid white; */
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+
+.header-div .toggle:hover{
+    cursor: pointer;
+}
+.header-div .toggle span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 4px 10px;
+    position: relative;
+    transition: .3s;
+
+}
+
+.header-div .menubar{
+    /* text-align: right; */
+    display: inline-block;
+    width: 100%;
+    /* border: 1px solid white;  */
+    text-align: right;
+    margin-right: 10px;
+}
+.header-div .menubar span{
+    display: inline;
+    /* border: 1px solid white;  */
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 3px 10px;
+    margin: 0 10px;
+    position: relative;
+}
+.header-div .menubar span:after{
+    content: "";
+    color: rebeccapurple;
+    position: absolute;
+    top: 35px;
+    left: 9%;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+.header-div .menubar span:hover{
+    cursor: pointer;
+}
+
+.header-div .menubar span:hover:after{
+    width: 80%;
+}
+.menubar *{
+    /* display: block; */
+    text-decoration: none;
+    /* color: #119DA4; */
+ }
+
+@media only screen and (max-width: 800px) {
+    .header-div img{
+        padding: 0;
+    }    
+.inner-header-div div:nth-child(1){
+    /* border: 5px solid yellow; */
+    flex-basis: 0%;
+    width: fit-content;
+
+}
+.inner-header-div div:nth-child(3){
+    display: none;
+    /* border: 5px solid yellow; */
+}
+.header-div .toggle{
+    flex-basis: 0%;
+    margin-left: 15px;
+}
+.inner-header-div{
+    display: flex;
+    justify-content: left;
+}
+
+.header-div img{
+    flex-basis: 0%;
+    width: 47%;
+    margin-left: 22%;
+}
+}

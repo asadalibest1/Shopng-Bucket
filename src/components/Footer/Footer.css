@@ -1,0 +1,6 @@
+.footer svg{
+    color: rgb(105, 100, 100);
+}.footer svg:hover{
+    cursor: pointer;
+    color: black;
+}

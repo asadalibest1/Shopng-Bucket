@@ -1,0 +1,77 @@
+.alert-div{
+    z-index: 1;
+
+    position: fixed;
+    top: 28vh;
+    left: 63%;
+    /* border: 1px solid black; */
+    height: 150px;
+    width: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* overflow: hidden; */
+}
+.alert-li{
+    margin: 10px auto;
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 30vw;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 1px 1px 8px rgb(134, 132, 132);
+    animation: example 2s linear 1 normal;
+    list-style: none;
+    position: relative;
+    /* top: 0; */
+    left: 40vw;
+    display: flex;
+}
+.alert-li img{
+    width: 100px;
+    height: auto;
+    border: .5px solid rgb(206, 204, 204);
+}
+
+.alert-li .inner-div{
+    width: 100%;
+    position: relative;
+
+}
+.alert-li .inner-div .title{
+    margin: 7px 23px;
+}
+.alert-li .inner-div .price{
+    position: absolute;
+    top: 72%;
+    margin: auto 20px;
+}
+.alert-li .inner-div .rating label{
+    margin: auto 3px;
+   font-size: 18px;
+   /* margin-right: 20px;  */
+}
+
+.alert-li .inner-div .rating{
+    color: red;
+    position: absolute;
+    top: 72%;
+    left: 58%;
+}
+.alert-li .inner-div .rating svg:nth-child(2){
+    /* border: 1px solid rgb(116, 92, 92); */
+    margin-right: 20px;
+    position: relative;
+    top: -5px;
+}
+
+
+
+@keyframes example {
+    0%   {left:40vw}
+    /* 25%  {left:200px; top:0px;} */
+    10%  {left: 0%; opacity: 1;}
+    /* 75%  {left:0px; top:200px;} */
+    100% {left: 0%; opacity: 0;}
+  }
